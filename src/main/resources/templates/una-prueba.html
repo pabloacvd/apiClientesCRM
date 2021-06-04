@@ -1,0 +1,16 @@
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Esto es una prueba</title>
+    <style>
+        i{color:red;}
+    </style>
+</head>
+<body>
+<p>Esto es una prueba!</p>
+<i>hola</i> <b>mundo!</b>
+<p th:text="'hola '+${nombreMascota}"></p>
+<hr />
+<input type="submit" th:value="${otraCosa}" />
+</body>
+</html>

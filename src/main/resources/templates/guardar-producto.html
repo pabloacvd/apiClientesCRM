@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>CRMVentas Web: Guardar producto</title>
+</head>
+<body>
+<h1>Nuevo producto</h1><hr />
+<form action="#" th:action="@{/nuevo-producto}" th:object="${producto}" method="post">
+    <p>Código de producto: <input type="text" placeholder="Código de producto" th:field="*{codigo_producto}" /></p>
+    <p>Categoría: <input type="text" placeholder="Categoría" th:field="*{categoria}" /></p>
+    <p>Nombre: <input type="text" placeholder="Nombre de producto" th:field="*{nombre}" /></p>
+    <p>Descripción: <input type="text" placeholder="Descripción" th:field="*{descripcion}" /></p>
+    <p>Precio unitario ($): <input type="text" placeholder="Precio unitario en pesos" th:field="*{precio_unitario}" /></p>
+    <p>Stock: <input type="text" placeholder="Stock" th:field="*{stock}" /></p>
+    <p><input type="submit" value="Guardar" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>
